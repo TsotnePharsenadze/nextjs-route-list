@@ -1,0 +1,35 @@
+{
+  "name": "nextjs-route-list",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "keywords": [
+    "nextjs",
+    "routes",
+    "cli",
+    "npm",
+    "list"
+  ],
+  "author": "Tsotne Pharsenadze",
+  "license": "ISC",
+  "description": "A CLI tool to list all routes in a Next.js app, similar to PHP's 'artisan route:list'.",
+  "dependencies": {
+    "commander": "^12.1.0",
+    "chalk": "^5.0.0"
+  },
+  "bin": {
+    "nextjs-route-list": "./index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/TsotnePharsenadze/nextjs-route-list.git"
+  },
+  "bugs": {
+    "url": "https://github.com/TsotnePharsenadze/nextjs-route-list/issues"
+  },
+  "homepage": "https://github.com/TsotnePharsenadze/nextjs-route-list#readme"
+}
