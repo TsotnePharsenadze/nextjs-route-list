@@ -61,7 +61,7 @@ This will output all the app and API routes in your project, with dynamic routes
 --- API Routes with Methods ---
 | Route                        | Methods   |
 |------------------------------|-----------|
-| /auth/:...nextauth           | GET, POST |
+| /auth/*nextauth           | GET, POST |
 | /register                    | POST      |
 
 --- Main Route ---
