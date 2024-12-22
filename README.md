@@ -6,7 +6,7 @@ A CLI tool for listing all routes in a Next.js app, similar to PHP's `artisan ro
 
 - **List All Routes**: Lists both app and API routes in your Next.js project.
 - **Dynamic Routes**: Automatically formats dynamic routes like `[id]` as `:id`.
-- **Catch-all Routes**: Formats catch-all routes like `[...slug]` as `\*slug`.
+- **Catch-all Routes**: Formats catch-all routes like `[...slug]` as `/*slug`.
 - **Main Route**: Always includes the root `/` route in the listing.
 - **Customizable**: Simple to install and run, and can be easily integrated into your development workflow.
 
@@ -42,7 +42,7 @@ Once installed, you can run the following command to list all the routes in your
 nextjs-route-list list
 ```
 
-This will output all the app and API routes in your project, with dynamic routes formatted as `:param` and catch-all routes as `\*param`.
+This will output all the app and API routes in your project, with dynamic routes formatted as `:param` and catch-all routes as `/*param`.
 
 ### Example Output
 
@@ -54,12 +54,12 @@ This will output all the app and API routes in your project, with dynamic routes
 /about
 /contact
 /blog/:id
-/blog/\*slug
+/blog/*slug
 
 --- API Routes ---
 /api/users
 /api/posts
-/api/api/\*nextauth
+/api/api/*nextauth
 ```
 
 ### Additional Options

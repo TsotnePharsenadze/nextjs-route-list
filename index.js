@@ -20,11 +20,10 @@ async function run() {
           (fs.existsSync(path.join(filePath, "route.js")) ||
             fs.existsSync(path.join(filePath, "route.ts")))
         ) {
-          const relativePath = path.relative(
-            path.join(process.cwd(), "app"),
-            filePath
-          );
-          const route = relativePath === "" ? "/api" : `/api/${relativePath}`;
+          const relativePath = path
+            .relative(path.join(process.cwd(), "app"), filePath)
+            .replace(/\\/g, "/"); 
+          const route = relativePath === "" ? "/api" : `/${relativePath}`;
           routes.push(route);
         }
 
@@ -32,10 +31,9 @@ async function run() {
           fs.existsSync(path.join(filePath, "page.jsx")) ||
           fs.existsSync(path.join(filePath, "page.tsx"))
         ) {
-          const relativePath = path.relative(
-            path.join(process.cwd(), "app"),
-            filePath
-          );
+          const relativePath = path
+            .relative(path.join(process.cwd(), "app"), filePath)
+            .replace(/\\/g, "/");
           const route = relativePath === "" ? "/" : `/${relativePath}`;
           routes.push(route);
         }
