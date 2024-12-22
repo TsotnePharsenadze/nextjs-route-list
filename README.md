@@ -51,15 +51,21 @@ This will output all the app and API routes in your project, with dynamic routes
 /
 
 --- App Routes ---
-/about
-/contact
-/blog/:id
-/blog/*slug
+| Route |
+|------------------------------|---------|
+| /about                       | N/A     |
+| /contact                     | N/A     |
+| /blog/:id                    | N/A     |
+| /blog/*slug                  | N/A     |
 
---- API Routes ---
-/api/users
-/api/posts
-/api/api/*nextauth
+--- API Routes with Methods ---
+| Route                        | Methods   |
+|------------------------------|-----------|
+| /auth/:...nextauth           | GET, POST |
+| /register                    | POST      |
+
+--- Main Route ---
+/
 ```
 
 ### Additional Options
