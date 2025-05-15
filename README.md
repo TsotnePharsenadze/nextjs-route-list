@@ -1,6 +1,6 @@
 # nextjs-route-list
 
-A CLI tool for listing all routes in a Next.js app, similar to PHP's `artisan route:list`. This tool allows developers to easily see all the available routes in their Next.js application, including dynamic and catch-all routes, from a single command.
+A CLI tool for listing all routes in a Next.js app, similar to Laravel's `artisan route:list`. This tool allows developers to easily see all the available routes in their Next.js application, including dynamic and catch-all routes, from a single command.
 
 ## Features
 
